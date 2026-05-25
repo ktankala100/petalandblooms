@@ -376,9 +376,9 @@
   .gallery-grid {
     display: grid;
     grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
-    grid-template-rows: 280px 200px;
-    gap: 3px;
-    padding: 0 3px;
+    grid-template-rows: 340px 240px;
+    gap: 4px;
+    padding: 0 4px;
   }
 
   .gallery-item {
@@ -393,21 +393,36 @@
     width: 100%;
     height: 100%;
     transition: transform 0.6s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  .gallery-item:hover .gallery-item-bg { transform: scale(1.05); }
+  .gallery-item:hover .gallery-item-bg { transform: scale(1.08); }
 
-  .g1 { background: linear-gradient(135deg, #e8d5c4, #c9a98e); }
-  .g2 { background: linear-gradient(135deg, #d6e0d3, #b5c9b0); }
-  .g3 { background: linear-gradient(135deg, #f2ddd6, #e0b9ad); }
-  .g4 { background: linear-gradient(135deg, #ede0d4, #d4b896); }
-  .g5 { background: linear-gradient(135deg, #c9d4c7, #a8bba5); }
-  .g6 { background: linear-gradient(135deg, #f0e4da, #ddc5b5); }
-  .g7 { background: linear-gradient(135deg, #d8e5d5, #b9ceb5); }
+  /* Real flower photos from floral websites via Pinterest/florist sources */
+  .g1 {
+    background-image: url('https://i.pinimg.com/736x/2e/2e/2e/2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e.jpg');
+    background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=900&q=85');
+  }
+  .g2 {
+    background-image: url('https://images.unsplash.com/photo-1487530811015-780780169b32?w=700&q=85');
+  }
+  .g3 {
+    background-image: url('https://images.unsplash.com/photo-1548460627-a34e98f5b8e3?w=700&q=85');
+  }
+  .g4 {
+    background-image: url('https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=700&q=85');
+  }
+  .g5 {
+    background-image: url('https://images.unsplash.com/photo-1490750967868-88df5691cc5f?w=700&q=85');
+  }
+  .g6 {
+    background-image: url('https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?w=700&q=85');
+  }
+  .g7 {
+    background-image: url('https://images.unsplash.com/photo-1523693916404-852c6da37f86?w=700&q=85');
+  }
 
   .gallery-item-overlay {
     position: absolute;
@@ -825,13 +840,13 @@
     <a href="#contact" class="btn-ghost" style="opacity:0.7;">View All Work →</a>
   </div>
   <div class="gallery-grid">
-    <div class="gallery-item"><div class="gallery-item-bg g1">🌸</div><div class="gallery-item-overlay">Bridal Collection</div></div>
-    <div class="gallery-item"><div class="gallery-item-bg g2">🌿</div><div class="gallery-item-overlay">Table Settings</div></div>
-    <div class="gallery-item"><div class="gallery-item-bg g3">🌹</div><div class="gallery-item-overlay">Classic Roses</div></div>
-    <div class="gallery-item"><div class="gallery-item-bg g4">💐</div><div class="gallery-item-overlay">Spring Bouquets</div></div>
-    <div class="gallery-item"><div class="gallery-item-bg g5">🌺</div><div class="gallery-item-overlay">Garden Style</div></div>
-    <div class="gallery-item"><div class="gallery-item-bg g6">🌻</div><div class="gallery-item-overlay">Sunflower Fields</div></div>
-    <div class="gallery-item"><div class="gallery-item-bg g7">🪷</div><div class="gallery-item-overlay">Arch Design</div></div>
+    <div class="gallery-item"><div class="gallery-item-bg g1"></div><div class="gallery-item-overlay">Bridal Collection</div></div>
+    <div class="gallery-item"><div class="gallery-item-bg g2"></div><div class="gallery-item-overlay">Table Settings</div></div>
+    <div class="gallery-item"><div class="gallery-item-bg g3"></div><div class="gallery-item-overlay">Classic Roses</div></div>
+    <div class="gallery-item"><div class="gallery-item-bg g4"></div><div class="gallery-item-overlay">Spring Bouquets</div></div>
+    <div class="gallery-item"><div class="gallery-item-bg g5"></div><div class="gallery-item-overlay">Garden Style</div></div>
+    <div class="gallery-item"><div class="gallery-item-bg g6"></div><div class="gallery-item-overlay">Sunflower Fields</div></div>
+    <div class="gallery-item"><div class="gallery-item-bg g7"></div><div class="gallery-item-overlay">Arch Design</div></div>
   </div>
 </section>
 
